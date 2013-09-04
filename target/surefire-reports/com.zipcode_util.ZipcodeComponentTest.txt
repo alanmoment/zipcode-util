@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.zipcode_util.ZipcodeComponentTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.081 sec <<< FAILURE!
+testZipcodeComponent(com.zipcode_util.ZipcodeComponentTest)  Time elapsed: 0.081 sec  <<< ERROR!
+com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 4 column 11
+	at com.google.gson.Gson.fromJson(Gson.java:818)
+	at com.google.gson.Gson.fromJson(Gson.java:741)
+	at com.zipcode_util.ZipcodeComponent.getJsonObject(ZipcodeComponent.java:27)
+	at com.zipcode_util.ZipcodeComponent.listCities(ZipcodeComponent.java:45)
+	at com.zipcode_util.ZipcodeComponentTest.testZipcodeComponent(ZipcodeComponentTest.java:40)
+Caused by: com.google.gson.stream.MalformedJsonException: Unterminated object at line 4 column 11
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1505)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:480)
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:403)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:666)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:659)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:667)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:642)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	... 32 more
+
